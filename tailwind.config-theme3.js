@@ -1,9 +1,12 @@
 module.exports = {
   theme: {
+    opacity: {
+      70: ".2",
+    },
     extend: {
       opacity: {
         80: ".8",
-        70: ".3",
+        70: ".5",
       },
     },
   },
