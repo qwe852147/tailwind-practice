@@ -1,5 +1,8 @@
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
+  // prefix: 'bo-',
+  // important: true,
+  // separator:'_',
   theme: {
     opacity: {
       10: "0.1",
@@ -19,6 +22,6 @@ module.exports = {
     // 測試多組 import
     // require("./tailwind.config-theme2"),
     // require("./tailwind.config-theme3"),
-    require("./tailwind.config-input-variant-order"),
+    // require("./tailwind.config-input-variant-order"),
   ],
 };
