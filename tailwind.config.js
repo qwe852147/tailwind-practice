@@ -15,9 +15,10 @@ module.exports = {
   },
   presets: [
     // theme 繼承及定義
-    // require("./tailwind.config-theme"),
+    require("./tailwind.config-theme"),
     // 測試多組 import
-    require("./tailwind.config-theme2"),
-    require("./tailwind.config-theme3"),
+    // require("./tailwind.config-theme2"),
+    // require("./tailwind.config-theme3"),
+    require("./tailwind.config-input-variant-order"),
   ],
 };
