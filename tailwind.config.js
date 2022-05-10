@@ -24,4 +24,9 @@ module.exports = {
     // require("./tailwind.config-theme3"),
     // require("./tailwind.config-input-variant-order"),
   ],
+  // corePlugins: {
+  //   borderColor: false,
+  //   backgroundColor: false,
+  //   textColor: false,
+  // },
 };
