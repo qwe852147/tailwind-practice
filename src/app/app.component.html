@@ -1,24 +1,180 @@
-<h1 class="text-8xl font-bold underline opacity-70">Hello world!</h1>
-<!-- <h1 class="bo-text-8xl bo-font-bold bo-underline bo-opacity-70">Hello world!</h1> -->
+<!-- <button class="btn2 btn1">Color check</button> -->
 
-<div
-  class="my-20 text-8xl border-solid border-2 text-gray-600 hover:border-dashed hover:text-red-500 border-red-700"
->
-  Variants Test
+
+
+<!-- Basic use -->
+<div class="p-5 flex flex-col items-center">
+  <div class="mb-[20px]">
+    <h1 class="font-bold text-gray-500">Basic use</h1>
+  </div>
+  <div class="flex flex-row gap-8">
+    <div class="item-block">
+      <label>html class</label>
+      <div class="border-4 border-black py-10 px-10 hover:border-red-700">
+        <button
+          class="inline-block text-base text-center decoration-0 align-middle cursor-pointer select-none border rounded border-solid border-transparent py-1 px-3 bg-blue-500 text-white">
+          Button
+        </button>
+      </div>
+    </div>
+    <div class="item-block">
+      <label>css outside layer</label>
+      <div class="btn-container">
+        <button class="btn-custom">
+          Button
+        </button>
+      </div>
+    </div>
+    <div class="item-block">
+      <label>css components layer</label>
+      <div class="btn-container">
+        <button class="btn-custom-c">
+          Button
+        </button>
+      </div>
+    </div>
+    <div class="item-block">
+      <label>css utilities layer</label>
+      <div class="btn-container">
+        <button class="btn-custom-u">
+          Button
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
-<!-- <div
-  class="my-20 text-8xl border-solid border-2 text-gray-600 hover_border-dashed hover_text-red-500 border-red-700"
->
-  Variants Test
-</div> -->
 
-<!-- <div>
-  <input
-    class="bomy-20 border-solid border-2 border-gray-700 focus:border-blue-600 hover:border-red-700"
-    value="Variants Order Test"
-  />
-</div> -->
+<!-- Basic with hover -->
+<div class="example-block">
+  <div class="mb-[20px]">
+    <h1 class="font-bold text-gray-500">Basic with hover</h1>
+  </div>
+  <div class="flex flex-row gap-8">
+    <div class="item-block">
+      <label>css outside layer</label>
+      <div class="btn-container">
+        <button class="hover:btn-custom">
+          Button
+        </button>
+      </div>
+    </div>
+    <div class="item-block">
+      <label>css components layer</label>
+      <div class="btn-container">
+        <button class="hover:btn-custom-c">
+          Button
+        </button>
+      </div>
+    </div>
+    <div class="item-block">
+      <label>css utilities layer</label>
+      <div class="btn-container">
+        <button class="hover:btn-custom-u">
+          Button
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 
-<!-- <button
-  class="inline-block text-base text-center decoration-0 align-middle cursor-pointer select-none border rounded border-solid border-transparent py-1 px-3 bg-blue-500 text-white"
->CorePlugin TEST</button> -->
+<!-- component style cover -->
+<div class="example-block">
+  <div class="mb-[20px]">
+    <h1 class="font-bold text-gray-500">Style cover</h1>
+  </div>
+  <div class="flex flex-row gap-8">
+    <div class="item-block">
+      <label>css outside layer</label>
+      <div class="btn-container">
+        <button class="btn-custom bg-green-500">
+          Button
+        </button>
+      </div>
+    </div>
+    <div class="item-block">
+      <label>css components layer</label>
+      <div class="btn-container">
+        <button class="btn-custom-c bg-green-500">
+          Button
+        </button>
+      </div>
+    </div>
+    <div class="item-block">
+      <label>css utilities layer</label>
+      <div class="btn-container">
+        <button class="btn-custom-u bg-green-500">
+          Button
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- addBase && addUtilities -->
+<div class="example-block">
+  <div class="mb-[20px]">
+    <h1 class="font-bold text-gray-500">addBase && addUtilities</h1>
+  </div>
+  <div class="flex flex-row gap-8">
+    <div class="item-block">
+      <label>addBase</label>
+      <div class="btn-container">
+        <h1>add Base</h1>
+      </div>
+    </div>
+    <div class="item-block">
+      <label>addUtilities</label>
+      <div class="btn-container">
+        <h1 class="content-red">add addUtilities</h1>
+      </div>
+    </div>
+    <div class="item-block">
+      <label>addUtilities</label>
+      <div class="btn-container">
+        <h1 class="hover:content-red">add addUtilities</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- matchUtilities -->
+<div class="example-block">
+  <div class="mb-[20px]">
+    <h1 class="font-bold text-gray-500">matchUtilities</h1>
+  </div>
+  <div class="flex flex-row gap-8">
+    <div class="item-block">
+      <label>matchUtilities</label>
+      <div class="p-5 w-[150px] bg-black text-white text-center border-red-500 matchborderU-[10]">
+        <label>Content</label>
+      </div>
+    </div>
+    <div class="item-block">
+      <label>matchUtilities-theme</label>
+      <div class="p-5 w-[150px] bg-black text-white text-center border-red-500 matchborderU-ten">
+        <label>Content</label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- matchComponents -->
+<div class="example-block">
+  <div class="mb-[20px]">
+    <h1 class="font-bold text-gray-500">matchComponents</h1>
+  </div>
+  <div class="flex flex-row gap-8">
+    <div class="item-block">
+      <label>matchComponents</label>
+      <div class="p-5 w-[150px] bg-black text-white text-center border-red-500 matchborderC-[10]">
+        <label>Content</label>
+      </div>
+    </div>
+    <div class="item-block">
+      <label>matchComponents-theme</label>
+      <div class="p-5 w-[150px] bg-black text-white text-center border-red-500 matchborderC-ten">
+        <label>Content</label>
+      </div>
+    </div>
+  </div>
+</div>

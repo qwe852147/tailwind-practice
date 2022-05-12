@@ -4,6 +4,14 @@
 @tailwind utilities;
 
 
+@layer utilities {
+  .btn-custom-u {
+    @apply inline-block text-base text-center decoration-0 align-middle cursor-pointer select-none border rounded border-solid border-transparent py-1 px-3 bg-blue-500 text-white
+  }
+}
 
-
-
+@layer components {
+  .btn-custom-c {
+    @apply inline-block text-base text-center decoration-0 align-middle cursor-pointer select-none border rounded border-solid border-transparent py-1 px-3 bg-blue-500 text-white
+  }
+}
